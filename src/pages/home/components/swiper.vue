@@ -1,0 +1,51 @@
+<template>
+  <div class="wrapper">
+  <swiper :options="swiperOption">
+    <!-- slides -->
+    <swiper-slide v-for="item of swiperList" :key="item.id">
+      <img class="swiper-img" :src="item.imgUrl" />
+    </swiper-slide>
+    <!-- Optional controls -->
+    <div class="swiper-pagination"  slot="pagination"></div>
+  </swiper>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HomeSwiper',
+  data () {
+    return {
+      swiperOption: {
+        pagination: '.swiper-pagination',
+        loop: true
+      },
+      swiperList: [{
+        id: '0001',
+        imgUrl: 'http://m.kstjkq.com/templets/default/shouji/images/banner/zhaomu.jpg'
+      }, {
+        id: '0002',
+        imgUrl: 'http://m.kstjkq.com/templets/default/shouji/images/banner/m-zyqh.jpg'
+      }, {
+        id: '0003',
+        imgUrl: 'http://m.kstjkq.com/templets/default/shouji/images/banner/m-teacher19.jpg'
+      }]
+    }
+  }
+}
+</script>
+
+<style scoped lang="stylus">
+  /*   >>> 穿透的意思  */
+  .wrapper >>> .swiper-pagination-bullet-active
+    background #fff
+  .wrapper
+    overflow hidden
+    width 100%
+    height 0
+    /*保持图片比例  70%  */
+    padding-bottom 70.25%
+    background gray
+    .swiper-img
+      width 100%
+</style>

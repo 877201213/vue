@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="header">
   <div class="header-left">
     <div class="iconfont back-icon">&#xe624;</div>
   </div>
@@ -44,7 +44,7 @@ export default {name: 'HomeHeader'}
     width 1.24rem
     float right
     text-align:center
-  .arrow-icon
-    margin-left -.04rem
-    font-size .24rem
+    .arrow-icon
+      margin-left -.04rem
+      font-size .24rem
 </style>
