@@ -83,6 +83,7 @@ export default {
     overflow hidden
     height 0
     padding-bottom 50%
+    margin .1rem 0 0 0
   }
     .icon {
       position relative
