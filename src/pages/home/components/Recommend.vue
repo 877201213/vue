@@ -4,7 +4,7 @@
   热销推荐</div>
 
   <ul>
-    <li class="item border-bottom" v-for="item of recommendList"
+    <li class="item border-bottom" v-for="item of list"
     :key="item.id">
         <img class="item-img" :src="item.imgUrl"/>
       <div class="item-info">
@@ -20,20 +20,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [ {
-        Id: '0001',
-        imgUrl: 'http://m.kstjkq.com/uploads/190905/1-1ZZ5142614522.jpg',
-        title: '昆山同济口腔医院',
-        decs: '昆山首家口腔专科医院'
-      }, {
-        Id: '0002',
-        imgUrl: 'http://m.kstjkq.com/uploads/190708/1-1ZFQG329592.jpg',
-        title: '昆山同济口腔医院',
-        decs: '昆山首家口腔专科医院'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
