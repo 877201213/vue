@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Home-Header :city="city"></Home-Header>
+    <Home-Header :city= "city"></Home-Header>
     <Home-Swiper :list = 'swiperList'></Home-Swiper>
     <Home-icons :list = 'iconList'></Home-icons>
-    <Home-Recommend :list="recommendList"></Home-Recommend>
+    <Home-Recommend :list= "recommendList"></Home-Recommend>
     <Home-weekend :list="weekendList"></Home-weekend>
   </div>
 </template>

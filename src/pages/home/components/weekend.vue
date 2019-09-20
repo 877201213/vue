@@ -4,7 +4,7 @@
       周末去哪儿啊</div>
 
     <ul>
-      <li class="item border-bottom" v-for="item of weekendList"
+      <li class="item border-bottom" v-for="item of list"
           :key="item.id">
         <div>
           <img class="item-img" :src="item.imgUrl"/>

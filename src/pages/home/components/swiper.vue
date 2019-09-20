@@ -42,7 +42,7 @@ export default {
     width 100%
     height 0
     /*保持图片比例  70%  */
-    padding-bottom 70.25%
+    padding-bottom 31.25%
     background gray
     .swiper-img
       width 100%
