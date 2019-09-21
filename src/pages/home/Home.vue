@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Home-Header :city= "city"></Home-Header>
+    <Home-Header></Home-Header>
     <Home-Swiper :list = 'swiperList'></Home-Swiper>
     <Home-icons :list = 'iconList'></Home-icons>
     <Home-Recommend :list= "recommendList"></Home-Recommend>
@@ -26,7 +26,6 @@ export default {
   },
   data () {
     return {
-      city: '',
       swiperList: [],
       iconList: [],
       recommendList: [],
@@ -43,7 +42,6 @@ export default {
       if (res.ret && res.data) {
         // eslint-disable-next-line no-unused-vars
         const data = res.data
-        this.city = res.data.city
         this.swiperList = res.data.swiperList
         this.iconList = res.data.iconList
         this.recommendList = res.data.recommendList

@@ -1,7 +1,7 @@
 <template>
   <div>
     <city-header></city-header>
-    <city-search></city-search>
+    <city-search :cities="cities"></city-search>
     <city-list
       :cities = 'cities'
       :hot = 'hotCities'
@@ -15,11 +15,11 @@
 </template>
 
 <script>
+import axios from 'axios'
 import CityHeader from '@/pages/city/components/Header'
 import CitySearch from '@/pages/city/components/Search'
 import CityList from '@/pages/city/components/List'
 import CityAlphabet from '@/pages/city/components/Alphabet'
-import axios from 'axios'
 
 export default {
   name: 'City',
