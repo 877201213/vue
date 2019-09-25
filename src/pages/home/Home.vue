@@ -4,7 +4,7 @@
     <Home-Swiper :list = 'swiperList'></Home-Swiper>
     <Home-icons :list = 'iconList'></Home-icons>
     <Home-Recommend :list= "recommendList"></Home-Recommend>
-    <Home-weekend :list="weekendList"></Home-weekend>
+    <Home-weekend :list= "weekendList"></Home-weekend>
   </div>
 </template>
 
@@ -14,6 +14,7 @@ import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/weekend'
+
 import axios from 'axios'
 export default {
   name: 'Home',
@@ -23,6 +24,7 @@ export default {
     HomeIcons,
     HomeRecommend,
     HomeWeekend
+
   },
   data () {
     return {
