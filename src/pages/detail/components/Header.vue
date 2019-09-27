@@ -27,8 +27,8 @@ export default {
   data () {
     return {
       showAbs: true,
-      opacityStyle : {
-        opacity : 0
+      opacityStyle: {
+        opacity: 0
       }
     }
   },
@@ -47,6 +47,10 @@ export default {
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  //即将被隐藏时，解绑
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
